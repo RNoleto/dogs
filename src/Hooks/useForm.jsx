@@ -8,6 +8,10 @@ const types = {
   password: {
     regex: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/,
     message: 'A senha percisa ter 1 caracter maísculo, 1 minúsculo e 1 digito. Com no mínimo 8 caracteres.',
+  },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize apenas números.',
   }
 };
 
