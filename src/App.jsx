@@ -16,10 +16,11 @@ import NotFound from "./Components/NotFound";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <UserStorage>
           <Header />
+          <main className="AppBody">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
@@ -35,6 +36,7 @@ const App = () => {
               }
             />
           </Routes>
+          </main>
           <Footer />
         </UserStorage>
       </BrowserRouter>
